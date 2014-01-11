@@ -6,8 +6,7 @@ NRBASEDIR="$HOME/newrelic"
 MODULEDIR="$HOME/lib/php/extensions"
 # get this value from 'uname -m'
 ARCH=x64
-# get this value from 'php -i|grep "PHP Extension"'
-PHPAPI=20100525
+PHPAPI=`php -i|grep "PHP Extension =>" | sed 's/PHP Extension => //'` # I need to learn bash...
 PHPZTS=""
  
 mkdir -p $NRBASEDIR
