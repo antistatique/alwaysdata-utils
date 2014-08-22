@@ -17,7 +17,7 @@ make install
 $PREFIX_DIR/bin/npm install -g less
  
 echo "export PATH=\$PATH:$PREFIX_DIR/bin" >> $HOME/.bashrc
- 
+source ~/.bashrc 
 # cleanup
 cd $PREFIX_DIR
 rm -r $TMP_DIR
