@@ -10,4 +10,4 @@ curl https://raw.github.com/antistatique/alwaysdata-utils/master/ad_newrelic_ins
 
 ## Install Nodejs + lesscss
 
-curl https://raw.github.com/antistatique/alwaysdata-utils/master/ad_node_install.sh | bash
+curl https://raw.githubusercontent.com/antistatique/alwaysdata-utils/master/ad_node_install.sh | bash
