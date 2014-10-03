@@ -9,4 +9,4 @@ mkdir ~/gems/
 
 source ~/.bashrc
 
-gem install sass
+gem install sass -v 3.3.4
