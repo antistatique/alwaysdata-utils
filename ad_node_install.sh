@@ -13,6 +13,9 @@ git checkout $NODE_VERSION
 make
 make install
  
+# INSTALL/UPGRADE NPM
+$PREFIX_DIR/bin/npm install -g npm
+ 
 # INSTALL LESSC
 $PREFIX_DIR/bin/npm install -g less
  
