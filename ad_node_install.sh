@@ -18,6 +18,15 @@ $PREFIX_DIR/bin/npm install -g npm
 $PREFIX_DIR/bin/npm update -g npm
 
 echo "export PATH=\$PATH:$PREFIX_DIR/bin" >> $HOME/.bashrc
+
+# Fix profile for capistrano access to npm
+echo "if [ "\$BASH" ]; then
+  if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+  fi
+fi
+" >> $HOME/.profile
+
 source ~/.bashrc
 
 # cleanup
