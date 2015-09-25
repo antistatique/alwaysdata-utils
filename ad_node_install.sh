@@ -2,6 +2,7 @@
 TMP_DIR="/tmp/${USER}_node"
 PREFIX_DIR="$HOME/local"
 NODE_VERSION=v0.10.20
+NPM_VERSION=2.14.6
 
 mkdir -p $PREFIX_DIR
 mkdir -p $TMP_DIR
@@ -14,8 +15,7 @@ make
 make install
 
 # INSTALL/UPGRADE NPM
-$PREFIX_DIR/bin/npm install -g npm
-$PREFIX_DIR/bin/npm update -g npm
+$PREFIX_DIR/bin/npm install -g npm@$NPM_VERSION
 
 echo "export PATH=\$PATH:$PREFIX_DIR/bin" >> $HOME/.bashrc
 
