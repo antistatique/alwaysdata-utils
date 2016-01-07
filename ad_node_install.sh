@@ -4,7 +4,7 @@ NODE_VERSION=v5.3.0
 NODE_DIRNAME=node-$NODE_VERSION-linux-x64
 
 cd $INSTALL_DIR
-wget --no-check-certificates https://nodejs.org/dist/$NODE_VERSION/$NODE_DIRNAME.tar.gz
+wget --no-check-certificate https://nodejs.org/dist/$NODE_VERSION/$NODE_DIRNAME.tar.gz
 tar -xzf $NODE_DIRNAME.tar.gz
 rm $NODE_DIRNAME.tar.gz
 
