@@ -15,7 +15,7 @@ mkdir -p $MODULEDIR
 cd $NRBASEDIR
  
 echo ">> Download the New Relic Agent..."
-wget "https://download.newrelic.com/php_agent/archive/$NRVERSION/newrelic-php5-$NRVERSIONFULL.tar.gz"
+wget --no-check-certificate "https://download.newrelic.com/php_agent/archive/$NRVERSION/newrelic-php5-$NRVERSIONFULL.tar.gz"
  
 echo ">> Unzip archive..."
 gzip -dc "newrelic-php5-$NRVERSIONFULL.tar.gz" | tar xf -
