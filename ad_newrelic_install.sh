@@ -10,6 +10,7 @@ PHPAPI=`php -i|grep "PHP Extension =>" | sed 's/PHP Extension => //'` # I need t
 PHPZTS=""
  
 mkdir -p $NRBASEDIR
+mkdir -p "$NRBASEDIR/log"
 mkdir -p $MODULEDIR
  
 cd $NRBASEDIR
@@ -33,7 +34,7 @@ echo ";; NEW RELIC"
 echo "extension=$MODULEDIR/newrelic.so"
 echo "newrelic.appname=\"$USER-global\""
 echo "newrelic.license=\"YOUR-LICENSE\""
-echo "newrelic.daemon.logfile=\"$HOME/log/newrelic-daemon.log\""
+echo "newrelic.daemon.logfile=\"$HOME/newrelic/log/newrelic-daemon.log\""
 echo "newrelic.daemon.location=\"$NRBASEDIR/newrelic-php5-$NRVERSIONFULL/daemon/newrelic-daemon.$ARCH\""
 echo "newrelic.capture_params=On"
 echo ""
