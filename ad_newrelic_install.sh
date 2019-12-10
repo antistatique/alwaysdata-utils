@@ -1,7 +1,7 @@
 #!/bin/bash
 
-NRVERSION="8.0.0.204"
-NRVERSIONFULL="8.0.0.204-linux"
+NRVERSION="9.4.0.249"
+NRVERSIONFULL="9.4.0.249-linux"
 NRBASEDIR="$HOME/newrelic"
 MODULEDIR="$HOME/lib/php/extensions"
 # get this value from 'uname -m'
